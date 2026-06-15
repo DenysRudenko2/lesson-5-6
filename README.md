@@ -3,6 +3,20 @@
 Модульний Terraform-проєкт, що піднімає в AWS повноцінну мережу (VPC) і керований
 Kubernetes-кластер (EKS) з двома node group-ами — базовий каркас під ML-сервіси.
 
+## Результат
+
+### EKS кластер — ACTIVE
+
+![EKS cluster active](screenshots/01-eks-cluster-active.png)
+
+### Node Groups (cpu + gpu)
+
+![EKS node groups](screenshots/02-eks-node-groups.png)
+
+### kubectl get nodes
+
+![kubectl get nodes](screenshots/03-kubectl-get-nodes.png)
+
 ## Що створюється
 
 - **VPC** через офіційний модуль [`terraform-aws-modules/vpc/aws`](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws):
